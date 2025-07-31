@@ -14,7 +14,7 @@ This is my personal portfolio website built with **HTML**, **CSS**, and **Bootst
 
 ## 📂 Features
 
-- Responsive layout  
+- Responsive Layout  
 - "About Me" and Background  
-- Project highlights  
-- Contact links (GitHub, LinkedIn, Email)
+- Project Highlights  
+- Contact Links (GitHub, LinkedIn, Email)
