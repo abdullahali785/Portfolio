@@ -1,6 +1,6 @@
 # Abdullah Ali's Portfolio 🌐
 
-This is my personal portfolio website built with **HTML**, **CSS**, and **Bootstrap**. It introduces who I am, where I’m from, what I do, and the projects I've worked on.
+This is my personal portfolio website built with **HTML**, **CSS**, and **Bootstrap**.
 
 ## 🔗 Live Website
 
@@ -15,6 +15,6 @@ This is my personal portfolio website built with **HTML**, **CSS**, and **Bootst
 ## 📂 Features
 
 - Responsive layout  
-- "About Me" and background  
+- "About Me" and Background  
 - Project highlights  
 - Contact links (GitHub, LinkedIn, Email)
