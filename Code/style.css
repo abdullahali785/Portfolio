@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(255, 250, 239);
+    color: rgb(0, 0, 89);
+}
+
+.full-screen-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
