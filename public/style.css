@@ -20,3 +20,15 @@ body {
 .nav-zoom:hover {
   transform: scale(1.12);
 }
+
+.custom-circle {
+    width: 26rem;
+    height: 24rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.custom-circle:hover {
+    border-color: #22c55e;
+}

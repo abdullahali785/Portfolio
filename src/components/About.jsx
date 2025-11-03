@@ -1,17 +1,16 @@
 import React, { useState } from "react";
+import image from "../Assets/Me.jpeg";
 
 function About() {
     return (
-        <div class="px-5 pt-5 my-5 mx-5 text-center border-bottom"> 
-            <div class="overflow-hidden" style={{"max-height": "30vh"}}> 
-                <div class="container px-5"> 
-                    <img src="Assets/Me.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Abdullah's Image" width="700" height="500" loading="lazy"/> 
-                </div> 
-            </div> 
-            <h1 class="display-4 fw-bold text-body-emphasis" style={{ color: "#000080" }}>
+        <div class="m-5 px-5 text-center border-bottom"> 
+            <div class="pb-5 d-flex justify-content-center">
+                <img src={image} alt="Photo of Abdullah Ali" class="custom-circle shadow border border-dark" />
+            </div>
+            <p class="mx-5 px-5 display-4 fs-1 fw-bold " style={{ color: "#00006aff" }}>
                 Hi, I'm Abdullah Ali. 
                 Here you can check out my experiences, projects, and skills!
-            </h1> 
+            </p> 
         </div>
     )
 }
