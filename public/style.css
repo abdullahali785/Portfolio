@@ -1,13 +1,12 @@
-body {
+* {
     background-color: #fffaf0;
-    background-image: url("https://transparenttextures.com/patterns/bedge-grunge.png");
-    color: navy !important;
+    /* background-image: url("https://transparenttextures.com/patterns/bedge-grunge.png"); */
+    background-image: url("../src/Assets/Bg.png");
 }
 
 .btn-outline-navy {
   color: #000080 !important;
   border-color: #000080 !important;
-  transition: all 0.3s ease-in-out !important;
 }
 .btn-outline-navy:hover {
   color: white !important;
@@ -15,10 +14,10 @@ body {
 }
 
 .nav-zoom {
-  transition: transform 0.2s ease-in-out !important;
+  transition: transform 0.4s ease-in-out !important;
 }
 .nav-zoom:hover {
-  transform: scale(1.12);
+  transform: scale(1.15);
 }
 
 .custom-circle {
