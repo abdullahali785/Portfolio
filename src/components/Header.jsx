@@ -2,8 +2,12 @@ import React, { useState } from "react";
 
 function Header() {
     return (
-        <div className="container my-3"> 
-            <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-5 mb-4"> 
+    <div>
+        <div style={{ backgroundColor: "#00006aff"}}>
+            Navy Block
+        </div>
+        <div className="container mb-3"> 
+            <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 mb-4"> 
                 <div className="col-md-3 mb-2 mb-md-0 text-center"> 
                     <a href="/" className="d-inline-flex link-body-emphasis text-decoration-none nav-zoom"> 
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="navy" className="bi bi-house-up-fill" viewBox="0 0 16 16">
@@ -21,9 +25,10 @@ function Header() {
                 <div className="col-md-3 text-center"> 
                     <button type="button" className="btn btn-outline-navy fs-4 fw-bolder nav-zoom">Contact Me</button> 
                 </div> 
-            </div>
+            </header>
         </div>
-    )
+    </div>
+    );
 }
 
 export default Header;
