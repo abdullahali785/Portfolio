@@ -5,12 +5,11 @@
 }
 
 .btn-outline-navy {
-  color: #000080 !important;
-  border-color: #000080 !important;
+  border-color: #000000 !important;
 }
 .btn-outline-navy:hover {
   color: white !important;
-  background-color: #000080 !important;
+  background-color: #000000 !important;
 }
 
 .nav-zoom {
@@ -30,4 +29,11 @@
 
 .custom-circle:hover {
     border-color: #22c55e;
+}
+
+.zoom {
+  transition: transform 0.4s ease-in-out !important;
+}
+.zoom:hover {
+  transform: scale(1.05);
 }
