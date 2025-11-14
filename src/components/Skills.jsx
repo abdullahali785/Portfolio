@@ -1,13 +1,24 @@
 import React, { useState } from "react";
-import pythonIcon from "../Assets/python-icon.gif";
-import javaIcon from "../Assets/java-icon.png";
 
 function Skills() {
+    function importAll(r) {
+        return r.keys().map(r);
+    }
+    const images = importAll(require.context('../Assets/Skills', false, /\.png$/));
+
     return (
     <div className="container px-4 py-5" id="custom-cards"> 
-        <h2 className="pb-2 fs-1 fw-bold border-bottom text-center">My Skills</h2>
-        <img src={pythonIcon} alt="Python icon"/>
-        <img src={javaIcon} alt="Java icon"/>
+        <h2 className="pb-2 fs-1 fw-bold text-center">My Skills</h2>
+
+        <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4 mt-3">
+            {images.map((img, i) => (
+            <div className="col d-flex justify-content-center" key={i}>
+                <div className="card border-0 shadow-sm p-3 rounded-4 text-center hover-shadow">
+                    <img src={img} alt={`${i}-icon`} className="img-fluid" style={{ width: "64px", height: "64px", objectFit: "contain" }}/>
+                </div>
+            </div>
+            ))}
+        </div>
     </div>
     );
 }

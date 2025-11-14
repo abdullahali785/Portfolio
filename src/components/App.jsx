@@ -4,7 +4,7 @@ import About from "./About";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Skills from "./Skills";
-import Leadership from "./Leadership";
+import Extras from "./Extras";
 import Footer from "./Footer";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Experience />
         <Projects />
         <Skills />
-        <Leadership />
+        <Extras />
         <Footer /> 
     </div>
     );

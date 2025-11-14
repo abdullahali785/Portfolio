@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 function Header() {
+    const options = [["Experience", "#"], ["Projects", "#"], ["Skills", "#"], ["Extras", "#"]];
+
     return (
     <div>
         <div style={{ backgroundColor: "#00006aff"}}>
@@ -18,9 +20,9 @@ function Header() {
                     </a>
                 </div> 
                 <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 gap-3"> 
-                    <li><a href="#" className="nav-link px-2 font-weight-bold fs-5 fw-bolder nav-zoom" style={{ color: "#000000ff" }}>Experience</a></li>
-                    <li><a href="#" className="nav-link px-2 font-weight-bold fs-5 fw-bolder nav-zoom" style={{ color: "#000000ff" }}>Projects</a></li>
-                    <li><a href="#" className="nav-link px-2 font-weight-bold fs-5 fw-bolder nav-zoom" style={{ color: "#000000ff" }}>Skills</a></li>
+                    {options.map(([option, link]) => (
+                        <li><a href={link} className="nav-link px-2 font-weight-bold fs-5 fw-bolder nav-zoom" style={{ color: "#000000ff" }}>{option}</a></li>
+                    ))}
                 </ul> 
                 <div className="col-md-3 text-center"> 
                     <button type="button" className="btn btn-outline-navy fs-4 fw-bolder nav-zoom">Contact Me</button> 

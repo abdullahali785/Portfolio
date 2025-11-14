@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-function Leadership() {
+function Extras() {
     
 }
 
-export default Leadership;
+export default Extras;
