@@ -9,7 +9,7 @@ function Footer() {
             </div> 
         </div>
         <div style={{ backgroundColor: "#00006aff"}}>
-            Navy Block
+            <br></br>
         </div>
     </footer>
     );

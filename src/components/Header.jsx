@@ -6,7 +6,7 @@ function Header() {
     return (
     <div>
         <div style={{ backgroundColor: "#00006aff"}}>
-            Navy Block
+            <br></br>
         </div>
         <div className="container mb-3"> 
             <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 mb-4"> 
