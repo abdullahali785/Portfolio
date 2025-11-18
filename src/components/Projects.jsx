@@ -31,7 +31,7 @@ function Projects() {
                 </div> 
             </div> 
             <br></br>
-            <div className="col" onClick={() => window.location.href = "https://abdullahali785.github.io/Jokes/"} style={{ cursor: "pointer" }}>
+            <div className="col" onClick={() => window.location.href = "https://github.com/abdullahali785/Jokes"} style={{ cursor: "pointer" }}>
                 <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom">
                     <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
                         <h3 className="my-3 pt-2 display-6 lh-1 fw-bold text-dark">Jokes API</h3>
