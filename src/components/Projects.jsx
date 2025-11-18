@@ -6,7 +6,7 @@ function Projects() {
     <div id="projects" className="container px-4 pt-5"> 
         <h2 className="pb-2 fs-1 fw-bold border-bottom text-center">My Projects</h2>
         <div id="custom-cards" className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 text-center"> 
-            <div className="col"> 
+            <div className="col" onClick={() => window.location.href = "https://docs.google.com/presentation/d/1LXpW12nK5nKEKy-Bs4Z-g4oXVKMiTFUuNBG-YOmDIMU/edit?slide=id.p1#slide=id.p1"} style={{ cursor: "pointer" }}> 
                 <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom">
                     <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
                         <h3 className="my-3 pt-2 display-6 lh-1 fw-bold text-dark">AquaVitals</h3>
@@ -14,7 +14,7 @@ function Projects() {
                     </div> 
                 </div>
             </div> 
-            <div className="col"> 
+            <div className="col" onClick={() => window.location.href = "https://blog-app-jm7l.onrender.com"} style={{ cursor: "pointer" }}>
                 <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom">
                     <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"> 
                         <h3 className="my-3 pt-2 display-6 lh-1 fw-bold text-dark">Abdullah's Books</h3> 
@@ -22,7 +22,7 @@ function Projects() {
                     </div>
                 </div> 
             </div> 
-            <div className="col">
+            <div className="col" onClick={() => window.location.href = "https://github.com/abdullahali785/HTTPServer"} style={{ cursor: "pointer" }}>
                 <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom">
                     <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
                         <h3 className="my-3 pt-2 display-6 lh-1 fw-bold text-dark">HTTP Server</h3>
@@ -31,7 +31,7 @@ function Projects() {
                 </div> 
             </div> 
             <br></br>
-            <div className="col">
+            <div className="col" onClick={() => window.location.href = "https://abdullahali785.github.io/Jokes/"} style={{ cursor: "pointer" }}>
                 <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom">
                     <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
                         <h3 className="my-3 pt-2 display-6 lh-1 fw-bold text-dark">Jokes API</h3>
@@ -39,7 +39,7 @@ function Projects() {
                     </div> 
                 </div> 
             </div> 
-            <div className="col"> 
+            <div className="col" onClick={() => window.location.href = "https://github.com/abdullahali785/AI-Image-Text-Analyzer"} style={{ cursor: "pointer" }}>
                 <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom">
                     <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
                         <h3 className="my-3 pt-2 display-6 lh-1 fw-bold text-dark">Image Text Analyzer</h3>
@@ -47,7 +47,7 @@ function Projects() {
                     </div> 
                 </div>
             </div> 
-            <div className="col"> 
+            <div className="col" onClick={() => window.location.href = "https://github.com/abdullahali785/TravelTicker"} style={{ cursor: "pointer" }}>
                 <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom">
                     <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"> 
                         <h3 className="my-3 pt-2 display-6 lh-1 fw-bold text-dark">Travel Tracker</h3> 

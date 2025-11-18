@@ -3,7 +3,7 @@ import image from "../Assets/Me.jpeg";
 
 function About() {
     return (
-    <div id="about" className="mt-5 mb-2 mx-5 px-5 text-center"> 
+    <div id="about" className="mt-5 mb-2 mx-5 pt-5 px-5 text-center"> 
         <div className="pb-5 d-flex justify-content-center">
             <img src={image} alt="Photo of Abdullah Ali" className="custom-circle shadow border border-dark border-5 zoom"/>
         </div>
