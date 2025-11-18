@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     background-color: #fffaf0;
     /* background-image: url("https://transparenttextures.com/patterns/bedge-grunge.png"); */

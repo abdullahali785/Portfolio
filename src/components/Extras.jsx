@@ -24,16 +24,16 @@ function Extras() {
             case 0:
                 return {transform: "translateX(0) scale(1)", zIndex: 3, opacity: 1};
             case 1:
-                return {transform: "translateX(450px) scale(0.8)", zIndex: 2, opacity: 0.8};
+                return {transform: "translateX(400px) scale(0.8)", zIndex: 2, opacity: 0.8};
             case -1:
-                return {transform: "translateX(-450px) scale(0.8)", zIndex: 2, opacity: 0.8};
+                return {transform: "translateX(-400px) scale(0.8)", zIndex: 2, opacity: 0.8};
             default:
                 return {transform: "translateX(0) scale(0.5)", opacity: 0};
         }
     };
 
     return (
-    <div>
+    <div id="extras">
         <div className="container px-4 pt-5" id="custom-cards"> 
             <h2 className="pb-2 fs-1 fw-bold text-center">Extra Curricular Activities</h2>
         </div>
@@ -42,7 +42,7 @@ function Extras() {
             <div className="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-4"> 
                 <div className="col"> 
                     <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom">
-                        <div className="d-flex flex-column h-100 px-5 pb-3 text-white text-shadow-1"> 
+                        <div className="d-flex flex-column h-100 px-5 pb-3 text-white text-shadow-1 text-center"> 
                             <p className="mt-4 pt-4 display-6 lh-1 fw-bold text-dark">Treasurer</p>
                             <h3 className="mb-4 pb-4 lh-1 fw-bold text-dark">Computer Science Society (CSS)</h3>
                             <p className="text-dark mt-auto">
@@ -56,7 +56,7 @@ function Extras() {
                 </div> 
                 <div className="col"> 
                     <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom">
-                        <div className="d-flex flex-column h-100 px-5 pb-3 text-shadow-1"> 
+                        <div className="d-flex flex-column h-100 px-5 pb-3 text-white text-shadow-1 text-center"> 
                             <p className="mt-4 pt-4 display-6 lh-1 fw-bold text-dark">First Year Representative</p>
                             <h3 className="mb-4 pb-4 lh-1 fw-bold text-dark">Student Senate</h3>
                             <p className="text-dark mt-auto">
@@ -92,9 +92,9 @@ function Extras() {
                             else normalized = 99;
 
                             return (
-                                <div key={i} className="bg-dark text-dark rounded-4 shadow position-absolute d-flex justify-content-center align-items-center p-4" style={{width: "450px", height: "400px", transition: "all 0.5s ease", ...getPositionStyles(normalized)}}>
+                                <div key={i} className="bg-dark text-dark rounded-4 position-absolute d-flex justify-content-center align-items-center p-4" style={{width: "450px", height: "400px", transition: "all 0.5s ease", ...getPositionStyles(normalized)}}>
                                     {card.type === "text" && (
-                                        <p className="p-4 fs-4 text-center bg-dark text-light">In March, 2025, my team placed 2nd across Iowa at the Pi515 AI Challange!<br></br>We built AquaVitals - A machine learning model for predicting fish survival and water transparency levels built on real time data from the Decorah Fish Hatchery.</p>
+                                        <p className="p-4 fs-4 text-center bg-dark text-light">In March, 2025, my team won 2nd place across Iowa at the Pi515 AI Challange!<br></br>We built AquaVitals - A machine learning model for predicting fish survival and water transparency levels built on real time data from the Decorah Fish Hatchery.</p>
                                     )}
                                     {card.type === "image" && (
                                         <img src={card.src} className="img-fluid rounded-4" style={{ maxHeight: "100%", maxWidth: "100%" }} />
@@ -107,24 +107,21 @@ function Extras() {
             </div> 
         </div>
 
-        <div className="container px-4" id="custom-cards"> 
-            <div className="row row-cols-1 row-cols-lg-1 align-items-center g-4 py-4"> 
-                <div className="col"> 
+        <div className="container px-4">
+            <div className="row justify-content-center py-4">
+                <div className="col-12 col-md-8 col-lg-6">
                     <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom">
-                        <div className="d-flex flex-column h-100 px-5 pb-3 text-white text-shadow-1"> 
-                            <p className="mt-4 pt-4 display-6 lh-1 fw-bold text-dark">Dean's List</p>
-                            <h3 className="mb-4 pb-4 lh-1 fw-bold text-dark">Luther College</h3>
+                        <div className="d-flex flex-column h-100 px-5 pb-3 text-white text-shadow-1 text-center">
+                            <h1 className="mt-4 pt-4 display-6 lh-1 fw-bold text-dark">Dean's List</h1>
+                            <h3 className="mb-4 pb-4 lh-1 fw-bold text-dark">Fall 2024 | Spring 2025</h3>
                             <p className="text-dark mt-auto">
-                                I’m proud to serve as Treasurer of the Luther College Computer Science Society, where I help turn ideas into action and create opportunities for our tech community to grow and thrive. Here's how I contribute:<br></br><br></br>
-                                -Oversee budgeting and financial strategy to power CSS events<br></br>
-                                -Lead planning for workshops, hackathons, and speaker sessions<br></br>
-                                -Build a strong, connected community of future tech leaders
+                                I’m honored to be recognized by the Dean at Luther College for achieving and maintaining a GPA above 3.5.
                             </p>
-                        </div> 
+                        </div>
                     </div>
-                </div>  
-            </div> 
-        </div> 
+                </div>
+            </div>
+        </div>
     </div>
     );
 }

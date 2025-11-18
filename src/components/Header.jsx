@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 
 function Header() {
-    const options = [["Experience", "#"], ["Projects", "#"], ["Skills", "#"], ["Extras", "#"]];
-
+    const options = [["Experience", "#experience"], ["Projects", "#projects"], ["Skills", "#skills"]];
     return (
-    <div>
-        <div style={{ backgroundColor: "#00006aff"}}>
-            <br></br>
-        </div>
-        <div className="container mb-3"> 
-            <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 mb-4"> 
+    <div id="top" className="sticky-top">
+        <div style={{ backgroundColor: "#00006aff", height: "20px" }}></div>
+
+        <header className="container"> 
+            <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 mb-2"> 
                 <div className="col-md-3 mb-2 mb-md-0 text-center"> 
                     <a href="/" className="d-inline-flex link-body-emphasis text-decoration-none nav-zoom"> 
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" className="bi bi-house-up-fill" viewBox="0 0 16 16">
@@ -19,16 +17,16 @@ function Header() {
                         </svg>
                     </a>
                 </div> 
-                <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 gap-3"> 
+                <ul className="nav col-12 col-md-auto mb-1 justify-content-center mb-md-0 gap-3"> 
                     {options.map(([option, link]) => (
-                        <li><a href={link} className="nav-link px-2 font-weight-bold fs-5 fw-bolder nav-zoom" style={{ color: "#000000ff" }}>{option}</a></li>
+                        <li key={option}><a href={link} className="nav-link px-2 font-weight-bold fs-5 fw-bolder nav-zoom" style={{ color: "#000000ff" }}>{option}</a></li>
                     ))}
                 </ul> 
                 <div className="col-md-3 text-center"> 
-                    <button type="button" className="btn btn-outline-navy fs-4 fw-bolder nav-zoom">Contact Me</button> 
+                    <button type="button" className="btn btn-outline-navy fs-5 fw-bolder nav-zoom">Contact Me</button> 
                 </div> 
-            </header>
-        </div>
+            </div>
+        </header>
     </div>
     );
 }
