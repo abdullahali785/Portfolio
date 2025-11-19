@@ -11,10 +11,10 @@ function SkillDetails({ skill, onClose }) {
                 <p className="text-center text-muted" style={{backgroundColor: "white"}}>{skill.description}</p>
 
                 <h5 className="mt-4 text-center" style={{backgroundColor: "white"}}>Some of my projects using {skill.name}</h5>
-                <ul>
+                <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
                     {Object.entries(skill.projects).map(([projectName, link], i) => (
                         <li key={i} className="text-center" style={{backgroundColor: "white"}}>
-                            <a href={link} target="_blank" rel="noopener noreferrer">{projectName}</a>
+                            <a href={link} target="_blank" rel="noopener noreferrer" style={{backgroundColor: "white"}}>{projectName}</a>
                         </li>
                     ))}
                 </ul>
