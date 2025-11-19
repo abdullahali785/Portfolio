@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function Experience() {
     return (
     <div id="experience" className="mt-1 mb-3"> 
-        <div className="py-3 px-5 text-center bg-dark text-white"> 
+        <div className="py-5 px-5 text-center bg-dark text-white"> 
             <div className="container py-5 bg-dark text-white"> 
                 <h1 className="pb-3 fs-1 fw-bold bg-dark text-white">My Experience</h1> 
                 <p className="col-lg-8 mx-auto fs-3 fw-semibold lead bg-dark text-white">Technology Help Desk Technician</p> 
