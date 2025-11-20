@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio — Abdullah Ali
+# 🌐 Personal Portfolio
 
 A modern, responsive **developer portfolio website** built with **React** and deployed using **GitHub Pages**.  
 This website showcases my projects, skills, experience, and contact links in a clean and visually appealing layout.
