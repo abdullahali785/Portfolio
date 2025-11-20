@@ -23,7 +23,7 @@ function Header() {
                     ))}
                 </ul> 
                 <div className="col-md-3 text-center"> 
-                    <button type="button" className="btn btn-outline-navy fs-5 fw-bolder nav-zoom">Contact Me</button> 
+                    <a type="button" className="btn btn-outline-navy fs-5 fw-bolder nav-zoom" href="#contact">Contact Me</a> 
                 </div> 
             </div>
         </header>
