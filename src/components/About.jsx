@@ -11,7 +11,7 @@ function About() {
             <p className="display-4 fs-1 fw-bolder" style={{ color: "#000000ff" }}>
                 Hi, I'm <span style={{ color: "#00158eff" }}>Abdullah Ali</span>
             </p>
-            <p className="display-4 fs-2 fw-bold" style={{ color: "#000000ff" }}>
+            <p className="display-4 fs-1 fw-bolder text-truncate" style={{ color: "#000000ff" }}>
                 Software Developer | AI/ML Engineer | Problem Solver
             </p>
         </div>
