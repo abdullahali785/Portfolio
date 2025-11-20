@@ -1,0 +1,49 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    background-color: #fffaf0;
+    /* background-image: url("https://transparenttextures.com/patterns/bedge-grunge.png"); */
+    background-image: url("../src/Assets/Bg.png");
+}
+
+.btn-outline-navy {
+  border-color: #000000 !important;
+}
+.btn-outline-navy:hover {
+  color: white !important;
+  background-color: #000000 !important;
+}
+
+.nav-zoom {
+  transition: transform 0.4s ease-in-out !important;
+}
+.nav-zoom:hover {
+  transform: scale(1.15);
+}
+
+.custom-circle {
+    width: 26rem;
+    height: 24rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.custom-circle:hover {
+    border-color: #22c55e;
+}
+
+.zoom {
+  transition: transform 0.4s ease-in-out !important;
+}
+.zoom:hover {
+  transform: scale(1.05);
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out !important;
+}
