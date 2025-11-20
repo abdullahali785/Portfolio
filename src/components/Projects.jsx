@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import image from "../Assets/NavyBackground.jpeg";
+import React from "react";
 
 function Projects() {
     return (

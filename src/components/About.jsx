@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import image from "../Assets/Me.jpeg";
 
 function About() {
@@ -11,8 +11,10 @@ function About() {
             <p className="display-4 fs-1 fw-bolder" style={{ color: "#000000ff" }}>
                 Hi, I'm <span style={{ color: "#00158eff" }}>Abdullah Ali</span>
             </p>
-            <p className="display-4 fs-1 fw-bolder text-truncate" style={{ color: "#000000ff" }}>
-                Software Developer | AI/ML Engineer | Problem Solver
+            <p className="fs-2 fw-bold text-center" style={{ color: "#000000ff" }}>
+                <span className="d-block d-md-inline">Software Developer | </span>
+                <span className="d-block d-md-inline">AI/ML Engineer | </span>
+                <span className="d-block d-md-inline">Problem Solver</span>
             </p>
         </div>
     </div>

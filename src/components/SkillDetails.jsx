@@ -1,5 +1,4 @@
 import React from "react";
-import skillsJSON from "../Assets/skills.json";
 
 function SkillDetails({ skill, onClose }) {
     return (

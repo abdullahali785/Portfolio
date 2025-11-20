@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Header() {
     const options = [["Experience", "#experience"], ["Projects", "#projects"], ["Skills", "#skills"]];
