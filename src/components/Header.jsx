@@ -12,7 +12,7 @@ function Header() {
                     <a href="#" className="d-inline-flex link-body-emphasis text-decoration-none nav-zoom"
                         onClick={(e) => {
                             e.preventDefault();
-                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                            window.location.href = "https://abdullahali785.github.io/Portfolio/";
                         }}> 
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" className="bi bi-house-up-fill" viewBox="0 0 16 16">
                             <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.854 1.5 1.5a.5.5 0 0 1-.708.708L13 11.707V14.5a.5.5 0 1 1-1 0v-2.793l-.646.647a.5.5 0 0 1-.708-.707l1.5-1.5a.5.5 0 0 1 .708 0Z"/>
