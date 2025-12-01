@@ -23,18 +23,6 @@ html {
   transform: scale(1.15);
 }
 
-.custom-circle {
-    width: 26rem;
-    height: 24rem;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: border-color 0.3s ease;
-}
-
-.custom-circle:hover {
-    border-color: #22c55e;
-}
-
 .zoom {
   transition: transform 0.4s ease-in-out !important;
 }
@@ -46,4 +34,24 @@ html {
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
   transform: scale(1.05);
   transition: 0.2s ease-in-out !important;
+}
+
+:root{
+  --avatar-min: 96px;
+  --avatar-preferred: 18vw;
+  --avatar-max: 220px;
+}
+
+.custom-circle {
+  width: clamp(var(--avatar-min), var(--avatar-preferred), var(--avatar-max));
+  height: clamp(var(--avatar-min), var(--avatar-preferred), var(--avatar-max));
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.custom-circle:hover {
+    border-color: #22c55e;
 }

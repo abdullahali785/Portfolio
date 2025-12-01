@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.cbdf6339.js",
+    "main.js": "/Portfolio/static/js/main.3a2cad8f.js",
     "static/media/Me.jpeg": "/Portfolio/static/media/Me.48863351019b51f3773b.jpeg",
     "static/media/TeamNorse.jpeg": "/Portfolio/static/media/TeamNorse.ce6af2720bd2dbc5578d.jpeg",
     "static/media/DayOfInnov.jpeg": "/Portfolio/static/media/DayOfInnov.8148faf392a3c245c52b.jpeg",
@@ -8,9 +8,9 @@
     "static/media/linkedin.png": "/Portfolio/static/media/linkedin.d21b834035baa551e886.png",
     "static/media/github.png": "/Portfolio/static/media/github.f11021803f68852df283.png",
     "index.html": "/Portfolio/index.html",
-    "main.cbdf6339.js.map": "/Portfolio/static/js/main.cbdf6339.js.map"
+    "main.3a2cad8f.js.map": "/Portfolio/static/js/main.3a2cad8f.js.map"
   },
   "entrypoints": [
-    "static/js/main.cbdf6339.js"
+    "static/js/main.3a2cad8f.js"
   ]
 }
