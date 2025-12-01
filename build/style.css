@@ -4,7 +4,6 @@ html {
 
 * {
     background-color: #fffaf0;
-    /* background-image: url("https://transparenttextures.com/patterns/bedge-grunge.png"); */
     background-image: url("../src/Assets/Bg.png");
 }
 
@@ -43,13 +42,13 @@ html {
 }
 
 .custom-circle {
-  width: clamp(var(--avatar-min), var(--avatar-preferred), var(--avatar-max));
-  height: clamp(var(--avatar-min), var(--avatar-preferred), var(--avatar-max));
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
+  width: clamp(var(--avatar-min), var(--avatar-preferred), var(--avatar-max)) !important;
+  height: clamp(var(--avatar-min), var(--avatar-preferred), var(--avatar-max)) !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 0 auto !important;
+  max-width: 100% !important;
 }
 
 .custom-circle:hover {
