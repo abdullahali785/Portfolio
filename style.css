@@ -38,7 +38,7 @@ html {
 :root {
   --avatar-min: 100px;
   --avatar-preferred: 70vw;
-  --avatar-max: 260px;
+  --avatar-max: 300px;
 }
 
 .custom-circle {
@@ -52,5 +52,5 @@ html {
 }
 
 .custom-circle:hover {
-    border-color: #22c55e !important;
+    border-color: #3c3c3c !important;
 }
