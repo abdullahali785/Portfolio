@@ -14,7 +14,7 @@ function About() {
             <p className="fs-2 fw-bold text-center" style={{ color: "#000000ff" }}>
                 <span className="d-block d-md-inline">Software Developer | </span>
                 <span className="d-block d-md-inline">AI/ML Engineer | </span>
-                <span className="d-block d-md-inline">Problem Solver</span>
+                <span className="d-block d-md-inline">Logic Architect</span>
             </p>
         </div>
     </div>
