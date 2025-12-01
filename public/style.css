@@ -37,8 +37,8 @@ html {
 
 :root {
   --avatar-min: 100px;
-  --avatar-preferred: 30vw;
-  --avatar-max: 360px;
+  --avatar-preferred: 70vw;
+  --avatar-max: 260px;
 }
 
 .custom-circle {
