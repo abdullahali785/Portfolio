@@ -35,10 +35,10 @@ html {
   transition: 0.2s ease-in-out !important;
 }
 
-:root{
-  --avatar-min: 96px;
-  --avatar-preferred: 18vw;
-  --avatar-max: 220px;
+:root {
+  --avatar-min: 100px;
+  --avatar-preferred: 30vw;
+  --avatar-max: 260px;
 }
 
 .custom-circle {
