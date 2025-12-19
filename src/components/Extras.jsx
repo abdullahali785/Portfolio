@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import TeamNorseImage from "../Assets/TeamNorse.jpeg";
 import DayOfInnovation from "../Assets/DayOfInnov.jpeg";
 import AquaVitals from "../Assets/AquaVitals.jpeg";
+import Description from "../Assets/Description.png";
 
 function Extras() {
     const cards = [
         { type: "image", src: TeamNorseImage },
         { type: "image", src: DayOfInnovation },
         { type: "image", src: AquaVitals },
-        { type: "text" }
+        { type: "image", src: Description },
+        // { type: "text" }
     ];
     const [index, setIndex] = useState(0);
 
