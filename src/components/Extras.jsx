@@ -20,15 +20,17 @@ function Extras() {
     };
 
     const getPositionStyles = (normalized) => {
+        const shift = "clamp(220px, 60vw, 400px)";
+
         switch (normalized) {
             case 0:
                 return {transform: "translateX(0) scale(1)", zIndex: 3, opacity: 1};
             case 1:
-                return {transform: "translateX(400px) scale(0.8)", zIndex: 2, opacity: 0.8};
+                return {transform: `translateX(${shift}) scale(0.85)`, zIndex: 2, opacity: 0.8};
             case -1:
-                return {transform: "translateX(-400px) scale(0.8)", zIndex: 2, opacity: 0.8};
+                return {transform: `translateX(calc(-1 * ${shift})) scale(0.85)`, zIndex: 2, opacity: 0.8};
             default:
-                return {transform: "translateX(0) scale(0.5)", opacity: 0};
+                return {transform: "scale(0.5)", opacity: 0};
         }
     };
 
@@ -79,7 +81,7 @@ function Extras() {
                         <button className="btn btn-light" onClick={rotateRight}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/></svg></button>
                     </div> 
 
-                    <div className="position-relative mx-auto bg-dark" style={{ width: "450px", height: "400px" }}>
+                    <div className="position-relative mx-auto bg-dark rotator-wrapper">
                         {cards.map((card, i) => {
                             const leftIndex = (index - 1 + cards.length) % cards.length;
                             const centerIndex = index;
@@ -92,9 +94,11 @@ function Extras() {
                             else normalized = 99;
 
                             return (
-                                <div key={i} className="bg-dark text-dark rounded-4 position-absolute d-flex justify-content-center align-items-center p-4" style={{width: "450px", height: "400px", transition: "all 0.5s ease", ...getPositionStyles(normalized)}}>
+                                <div key={i} className="bg-dark text-dark rounded-4 position-absolute d-flex justify-content-center align-items-center p-4 rotator-card" style={{transition: "all 0.5s ease", ...getPositionStyles(normalized)}}>
                                     {card.type === "text" && (
-                                        <a href="https://www.linkedin.com/posts/abd785_pi515-dayofinnovation-aquavitals-activity-7321650469389414400-6Vcc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFIiNg0BYGpw8JXUT6lKghrPfpbLvS46WXw" className="bg-dark" style={{ textDecoration: "none" }}><p className="p-4 fs-4 text-center bg-dark text-light">In March, 2025, my team won <span className="fw-bold bg-dark">2nd place across Iowa</span> at the Pi515 AI Challange!<br></br>We built AquaVitals - A machine learning model for predicting fish survival and water transparency levels built on real time data from the Decorah Fish Hatchery.</p></a>
+                                        <a href="https://www.linkedin.com/posts/abd785_pi515-dayofinnovation-aquavitals-activity-7321650469389414400-6Vcc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFIiNg0BYGpw8JXUT6lKghrPfpbLvS46WXw" className="bg-dark" style={{ textDecoration: "none" }}>
+                                            <p className="p-4 fs-4 text-center bg-dark text-light">In March, 2025, my team won <span className="fw-bold bg-dark">2nd place across Iowa</span> at the Pi515 AI Challange!<br></br>We built AquaVitals - A machine learning model for predicting fish survival and water transparency levels built on real time data from the Decorah Fish Hatchery.</p>
+                                        </a>
                                     )}
                                     {card.type === "image" && (
                                         <img src={card.src} className="img-fluid rounded-4" style={{ maxHeight: "100%", maxWidth: "100%" }}/>
