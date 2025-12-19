@@ -5,10 +5,10 @@ import AquaVitals from "../Assets/AquaVitals.jpeg";
 
 function Extras() {
     const cards = [
-        { type: "text" },
         { type: "image", src: TeamNorseImage },
         { type: "image", src: DayOfInnovation },
-        { type: "image", src: AquaVitals }
+        { type: "image", src: AquaVitals },
+        { type: "text" }
     ];
     const [index, setIndex] = useState(0);
 
