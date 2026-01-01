@@ -119,7 +119,7 @@ function Extras() {
                     <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom">
                         <div className="d-flex flex-column h-100 px-5 pb-3 text-white text-shadow-1 text-center">
                             <h1 className="mt-4 pt-4 display-6 lh-1 fw-bold text-dark">Dean's List</h1>
-                            <h3 className="mb-4 pb-4 lh-1 fw-bold text-dark">Fall 2024 | Spring 2025</h3>
+                            <h3 className="mb-4 pb-4 lh-1 fw-bold text-dark">Fall 2024 | Spring 2025 | Fall 2025</h3>
                             <p className="text-dark mt-auto">
                                 I’m honored to be recognized by the Dean at Luther College for achieving and maintaining a GPA above 3.5.
                             </p>
