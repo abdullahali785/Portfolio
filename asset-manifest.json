@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.3eed7db3.js",
+    "main.js": "/Portfolio/static/js/main.0a24d742.js",
     "static/media/Me.jpeg": "/Portfolio/static/media/Me.c260c53de6b845b10a73.jpeg",
     "static/media/TeamNorse.jpeg": "/Portfolio/static/media/TeamNorse.ce6af2720bd2dbc5578d.jpeg",
     "static/media/DayOfInnov.jpeg": "/Portfolio/static/media/DayOfInnov.8148faf392a3c245c52b.jpeg",
     "static/media/Description.png": "/Portfolio/static/media/Description.ea72ec88e707338640c5.png",
     "static/media/AquaVitals.jpeg": "/Portfolio/static/media/AquaVitals.01548ba899c1e019b310.jpeg",
-    "static/media/next.png": "/Portfolio/static/media/next.92f815a149b439059551.png",
     "static/media/linkedin.png": "/Portfolio/static/media/linkedin.d21b834035baa551e886.png",
     "static/media/github.png": "/Portfolio/static/media/github.f11021803f68852df283.png",
     "static/media/docker.png": "/Portfolio/static/media/docker.57f3e8e03e42e7e33f49.png",
     "index.html": "/Portfolio/index.html",
-    "main.3eed7db3.js.map": "/Portfolio/static/js/main.3eed7db3.js.map"
+    "main.0a24d742.js.map": "/Portfolio/static/js/main.0a24d742.js.map"
   },
   "entrypoints": [
-    "static/js/main.3eed7db3.js"
+    "static/js/main.0a24d742.js"
   ]
 }
