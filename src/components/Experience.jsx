@@ -9,8 +9,8 @@ function Experience() {
                 <p className="col-lg-8 mx-auto fs-3 fw-semibold lead bg-dark text-white">Technology Help Desk Technician</p> 
                 <p className="col-lg-8 mx-auto lead bg-dark text-white">
                     I diagnosed and resolved <span className="fw-bold bg-dark">hardware, software, and network</span> issues for students, faculty, and staff.
-                    Documented <span className="fw-bold bg-dark">250+</span> tickets demonstrating strong problem-solving and clear communication skills.
-                    Made <span className="fw-bold bg-dark">400+</span> edits to the Technology Help Desk Wiki, a documentation of more than <span className="fw-bold bg-dark">850</span> pages.
+                    Documented <span className="fw-bold bg-dark">350+</span> tickets demonstrating strong problem-solving and clear communication skills.
+                    Made <span className="fw-bold bg-dark">1000+</span> edits to the Technology Help Desk Wiki, a documentation of more than <span className="fw-bold bg-dark">850</span> pages.
                     Collaborated with other Luther departments and ITS sub-teams to ensure smooth operations.
                 </p> 
             </div> 

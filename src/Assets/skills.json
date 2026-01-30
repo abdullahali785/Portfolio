@@ -39,7 +39,7 @@
         "id": 6,
         "name": "Git",
         "description": "Version control system used for tracking code changes and collaboration.",
-        "projects": {"See My Github": "https://github.com/abdullahali785", "Abdullah's Books": "https://github.com/abdullahali785/Books", "Fitness Made Feasible": "https://github.com/abdullahali785/Fitness"}
+        "projects": {"See My Github": "https://github.com/abdullahali785", "FitVault": "https://github.com/abdullahali785/FitVault", "Abdullah's Books": "https://github.com/abdullahali785/Books", "Fitness Made Feasible": "https://github.com/abdullahali785/Fitness"}
     },
     {
         "id": 7,
@@ -69,13 +69,13 @@
         "id": 11,
         "name": "Node.js",
         "description": "JavaScript runtime environment used to build scalable backend applications.",
-        "projects": {"Abdullah's Books": "https://github.com/abdullahali785/Books", "Blog WebApp": "https://github.com/abdullahali785/Blog-WebApp", "Perma List": "https://github.com/abdullahali785/PermaList"}
+        "projects": {"FitVault": "https://github.com/abdullahali785/FitVault", "Abdullah's Books": "https://github.com/abdullahali785/Books", "Blog WebApp": "https://github.com/abdullahali785/Blog-WebApp", "Perma List": "https://github.com/abdullahali785/PermaList"}
     },
     {
         "id": 12,
         "name": "PostgreSQL",
         "description": "Powerful open-source relational database known for reliability and advanced features.",
-        "projects": {"Abdullah's Books": "https://github.com/abdullahali785/Books", "Blog WebApp": "https://github.com/abdullahali785/Blog-WebApp"}
+        "projects": {"FitVault": "https://github.com/abdullahali785/FitVault", "Abdullah's Books": "https://github.com/abdullahali785/Books", "Blog WebApp": "https://github.com/abdullahali785/Blog-WebApp"}
     },
     {
         "id": 13,
@@ -99,12 +99,30 @@
         "id": 16,
         "name": "SQL",
         "description": "Language used for managing and querying relational databases.",
-        "projects": {"Stay tuned, coming soon!": ""}
+        "projects": {"FitVault": "https://github.com/abdullahali785/FitVault"}
     },
     {
         "id": 17,
         "name": "Vue.js",
         "description": "Progressive JavaScript framework for building frontend interfaces.",
         "projects": {"Stay tuned, coming soon!": ""}
+    },
+    {
+        "id": 18,
+        "name": "Docker",
+        "description": "Packages applications into lightweight and portable containers that run consistently across any environment.",
+        "projects": {"Stay tuned, coming soon!": ""}
+    }, 
+    {
+        "id": 19,
+        "name": "TypeScript",
+        "description": "Core programming language of the web used for dynamic and interactive pages.",
+        "projects": {"FitVault": "https://github.com/abdullahali785/FitVault"}
+    }, 
+    {
+        "id": 20,
+        "name": "Next.js",
+        "description": "React Framework for building full-stack web applications with built-in features like server-side rendering, static generation, and routing.",
+        "projects": {"FitVault": "https://github.com/abdullahali785/FitVault"}
     }
 ]
