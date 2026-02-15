@@ -25,16 +25,14 @@ function Experience() {
     //     </div> 
     // </div>
     <div id="experience" className="py-5 bg-dark text-white">
-        <div className="container py-5">
-
-            <h1 className="text-center fw-bold mb-5">My Experience</h1>
-
+        <div className="container bg-dark py-5">
+            <h1 className="text-center text-white fw-bold mb-5 bg-dark">My Experience</h1>
             {/* Experience Card 1 */}
             <div className="card bg-secondary bg-opacity-10 border-0 shadow-lg mb-5">
             <div className="card-body p-5">
 
                 <h3 className="fw-bold">Software Engineering Intern</h3>
-                <h5 className="text-info mb-4">String Swing USA</h5>
+                <h5 className="mb-4"><span style={{ color: "#00158eff" }}>String Swing USA</span></h5>
 
                 <ul className="fs-5">
                 <li className="mb-3">
@@ -63,7 +61,7 @@ function Experience() {
             <div className="card-body p-5">
 
                 <h3 className="fw-bold">Technology Help Desk Technician</h3>
-                <h5 className="text-info mb-4">Luther College</h5>
+                <h5 className="mb-4"><span style={{ color: "#00158eff" }}>Luther College</span></h5>
 
                 <ul className="fs-5">
                 <li className="mb-3">
