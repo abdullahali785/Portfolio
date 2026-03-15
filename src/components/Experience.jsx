@@ -14,20 +14,15 @@ function Experience() {
 
                 <ul className="fs-5">
                 <li className="mb-3">
-                    Built an automated <strong>EBITDA reporting pipeline</strong> integrating 
-                    <strong> BigCommerce API, Amazon SP-API, and SalesTrac </strong> 
-                    to centralize revenue and cost data for two companies.
+                    Built an automated <strong>financial reporting software</strong> integrating <strong>BigCommerce API, Amazon SP-API, and SalesTrac</strong> to centralize revenue and cost data for <strong>2</strong> companies.
                 </li>
 
                 <li className="mb-3">
-                    Developed a daily <strong>ETL process</strong> to clean, aggregate, 
-                    and generate dynamic daily, weekly, and monthly financial reports in Google Sheets.
+                    Developed a daily <strong>ETL workflow</strong> to clean, aggregate, and generate dynamic daily, weekly, and monthly financial reports in Google Sheets.
                 </li>
 
                 <li>
-                    Implemented combined and company-specific 
-                    <strong> financial metrics</strong> to support 
-                    <strong> executive decision-making</strong>.
+                    Implemented combined and company-specific <strong>financial metrics</strong> to support <strong>executive decision making</strong>.
                 </li>
                 </ul>
 
@@ -43,18 +38,15 @@ function Experience() {
 
                 <ul className="fs-5">
                     <li className="mb-3">
-                        Diagnosed and resolved <strong>hardware, software, and network issues </strong>
-                        for students, faculty, and staff.
+                        Diagnosed and resolved <strong>hardware, software, and network issues</strong> for students, faculty, and staff.
                     </li>
 
                     <li className="mb-3">
-                        Documented <strong>350+ support tickets</strong>, demonstrating strong
-                        problem-solving and communication skills.
+                        Documented <strong>400+ support tickets</strong>, demonstrating strong problem-solving and communication skills.
                     </li>
 
                     <li className="mb-3">
-                        Made <strong>1000+ edits</strong> to a technical wiki containing over
-                        <strong> 850 pages</strong>.
+                        Made <strong>1000+ edits</strong> to a technical wiki containing over <strong>850 pages</strong>.
                     </li>
 
                     <li>
