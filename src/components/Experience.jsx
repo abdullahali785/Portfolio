@@ -42,24 +42,24 @@ function Experience() {
                 <h5 className="mb-4"><span style={{ color: "#00158eff" }}>Luther College</span></h5>
 
                 <ul className="fs-5">
-                <li className="mb-3">
-                    Diagnosed and resolved <strong>hardware, software, and network issues </strong>
-                    for students, faculty, and staff.
-                </li>
+                    <li className="mb-3">
+                        Diagnosed and resolved <strong>hardware, software, and network issues </strong>
+                        for students, faculty, and staff.
+                    </li>
 
-                <li className="mb-3">
-                    Documented <strong>350+ support tickets</strong>, demonstrating strong
-                    problem-solving and communication skills.
-                </li>
+                    <li className="mb-3">
+                        Documented <strong>350+ support tickets</strong>, demonstrating strong
+                        problem-solving and communication skills.
+                    </li>
 
-                <li className="mb-3">
-                    Made <strong>1000+ edits</strong> to a technical wiki containing over
-                    <strong> 850 pages</strong>.
-                </li>
+                    <li className="mb-3">
+                        Made <strong>1000+ edits</strong> to a technical wiki containing over
+                        <strong> 850 pages</strong>.
+                    </li>
 
-                <li>
-                    Collaborated with multiple departments and ITS sub-teams to ensure smooth operations.
-                </li>
+                    <li>
+                        Collaborated with multiple departments and ITS sub-teams to ensure smooth operations.
+                    </li>
                 </ul>
 
             </div>
