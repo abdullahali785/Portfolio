@@ -12,9 +12,9 @@ function About() {
                 Hi, I'm <span style={{ color: "#00158eff" }}>Abdullah Ali</span>
             </p>
             <p className="fs-2 fw-bold text-center" style={{ color: "#000000ff" }}>
-                <span className="d-block d-md-inline">Software Developer | </span>
+                <span className="d-block d-md-inline">Software Architect | </span>
                 <span className="d-block d-md-inline">AI/ML Engineer | </span>
-                <span className="d-block d-md-inline">Logic Architect</span>
+                <span className="d-block d-md-inline">System Designer</span>
             </p>
         </div>
     </div>
