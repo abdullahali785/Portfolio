@@ -93,30 +93,77 @@ html {
 }
 
 /* Skills — reveal the details on hover (no click required). The popover is a
-   child of the card and sits flush against its bottom (top: 100%, no gap), so
-   the card keeps its :hover state while the cursor is inside it — letting the
-   project links stay clickable. Clicking the icon still opens the full modal. */
+   child of the card and sits just below it, so the card keeps its :hover state
+   while the cursor travels into it — letting the project links stay clickable.
+   Clicking the icon still opens the full modal. */
 .skill-card {
   position: relative;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.skill-card:hover,
+.skill-card:focus-within {
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 30, 0.15) !important;
+  /* Lift the whole card (and therefore the popover, its descendant) above the
+     cards that come later in the grid. Without this the popover paints behind
+     adjacent icons. We must NOT use `transform` on the card here — a transform
+     would create a stacking context that traps the popover's z-index inside. */
+  z-index: 30;
+}
+
+/* Scale just the icon on hover — keeps the popover crisp and undistorted. */
+.skill-icon {
+  transition: transform 0.2s ease-in-out;
+}
+.skill-card:hover .skill-icon {
+  transform: scale(1.08);
 }
 
 .skill-popover {
   position: absolute;
-  top: 100%;
+  top: calc(100% + 14px);
   left: 50%;
-  transform: translateX(-50%);
-  width: min(260px, 80vw);
-  margin-top: 0;
-  padding: 1rem;
+  transform: translateX(-50%) translateY(8px);
+  width: min(280px, 86vw);
+  padding: 1.25rem;
   text-align: center;
   background: #fff !important;
+  border: 1px solid rgba(0, 0, 30, 0.06);
   border-radius: 1rem;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.18);
-  z-index: 1050;
+  box-shadow: 0 14px 34px rgba(0, 0, 30, 0.2);
+  z-index: 40;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.18s ease-in-out;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Invisible bridge spanning the gap between the card and the popover, so the
+   cursor stays over a popover descendant (keeping .skill-card:hover alive)
+   while travelling down into it. */
+.skill-popover::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0;
+  right: 0;
+  height: 18px;
+  background: transparent;
+}
+
+/* Caret pointing up at the icon. */
+.skill-popover::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  background-image: none;
+  transform: translateX(-50%) rotate(45deg);
+  border-left: 1px solid rgba(0, 0, 30, 0.06);
+  border-top: 1px solid rgba(0, 0, 30, 0.06);
 }
 
 /* Keep the popover and its text on a clean white surface (the global
@@ -126,12 +173,59 @@ html {
   background-image: none !important;
 }
 
-.skill-popover a {
+.skill-popover-title {
+  color: #00158e;
+}
+
+.skill-popover-desc {
+  color: #555;
+  line-height: 1.45;
+}
+
+.skill-popover-divider {
+  height: 1px;
+  margin: 0.9rem 0;
+  background: rgba(0, 0, 30, 0.08) !important;
+}
+
+.skill-popover-label {
+  color: #9a9a9a;
+  letter-spacing: 0.08em;
+}
+
+.skill-popover-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+/* Project links rendered as pills. More specific than `.skill-popover *` so the
+   transparent-background override above doesn't strip their fill. */
+.skill-popover .skill-chip {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #00158e;
+  background-color: #eef1ff !important;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.skill-popover .skill-chip:hover {
+  color: #fff;
+  background-color: #00158e !important;
   text-decoration: none;
 }
 
-.skill-popover a:hover {
-  text-decoration: underline;
+.skill-popover .skill-chip-muted {
+  color: #9a9a9a;
+  background-color: #f1f1f1 !important;
+  font-weight: 500;
+  cursor: default;
 }
 
 .skill-card:hover .skill-popover,
@@ -139,4 +233,5 @@ html {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
 }

@@ -18,20 +18,23 @@ function Skills() {
                 return (
                 <div className="col d-flex justify-content-center" key={index}>
                     {/* Click opens the full modal (fallback for touch); hover reveals the popover below. */}
-                    <div className="skill-card card border-0 shadow-sm p-3 rounded-4 text-center hover-shadow" style={{ cursor: "pointer" }} onClick={() => setSelectedSkill(skill)}>
-                        <img src={skillSource} alt={skill.name} className="img-fluid" style={{ width: "64px", height: "64px", objectFit: "contain" }}/>
+                    <div className="skill-card card border-0 shadow-sm p-3 rounded-4 text-center" style={{ cursor: "pointer" }} onClick={() => setSelectedSkill(skill)}>
+                        <img src={skillSource} alt={skill.name} className="skill-icon img-fluid" style={{ width: "64px", height: "64px", objectFit: "contain" }}/>
 
                         {/* Hover popover — same info as the modal. It's a child of the card so the
                             card stays :hover-ed while the cursor is inside it, keeping links clickable. */}
                         <div className="skill-popover" onClick={(e) => e.stopPropagation()}>
-                            <h5 className="fw-bold mb-1">{skill.name}</h5>
-                            <p className="small mb-2">{skill.description}</p>
-                            <p className="small fw-bold mb-1">Projects using {skill.name}</p>
-                            {Object.entries(skill.projects).map(([projectName, link], i) => (
-                                link
-                                    ? <a key={i} href={link} target="_blank" rel="noopener noreferrer" className="d-block small" onClick={(e) => e.stopPropagation()}>{projectName}</a>
-                                    : <span key={i} className="d-block small text-muted">{projectName}</span>
-                            ))}
+                            <h5 className="skill-popover-title fw-bold mb-2">{skill.name}</h5>
+                            <p className="skill-popover-desc small mb-0">{skill.description}</p>
+                            <div className="skill-popover-divider" />
+                            <p className="skill-popover-label small fw-bold mb-2">PROJECTS</p>
+                            <div className="skill-popover-chips">
+                                {Object.entries(skill.projects).map(([projectName, link], i) => (
+                                    link
+                                        ? <a key={i} href={link} target="_blank" rel="noopener noreferrer" className="skill-chip" onClick={(e) => e.stopPropagation()}>{projectName}</a>
+                                        : <span key={i} className="skill-chip skill-chip-muted">{projectName}</span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
