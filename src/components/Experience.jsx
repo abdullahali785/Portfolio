@@ -91,11 +91,11 @@ function Experience() {
                     </li>
 
                     <li className="mb-3">
-                        Documented <strong>350+ support tickets</strong>, demonstrating strong problem-solving and communication skills.
+                        Documented <strong>450+ support tickets</strong>, demonstrating strong problem-solving and communication skills.
                     </li>
 
                     <li className="mb-3">
-                        Made <strong>1000+ edits</strong> to the Technology Help Desk Wiki, a documentation of more than <strong>850 articles</strong>.
+                        Made <strong>1700+ edits</strong> to the Technology Help Desk Wiki, a documentation of more than <strong>850 articles</strong>.
                     </li>
 
                     <li>
