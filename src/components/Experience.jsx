@@ -18,7 +18,7 @@ function Experience() {
                             <span className="text-secondary fs-6"> &middot; Cheyenne, WY</span>
                         </h5>
                     </div>
-                    <span className="badge bg-secondary bg-opacity-25 text-light fs-6 mt-1">June 2026 &ndash; Present</span>
+                    <span className="badge bg-secondary bg-opacity-25 text-light fs-6 mt-1">June 2026 &ndash; July 2026</span>
                 </div>
 
                 <ul className="fs-5">
@@ -100,6 +100,38 @@ function Experience() {
 
                     <li>
                         Collaborated with other Luther departments and ITS sub-teams to ensure smooth operations.
+                    </li>
+                </ul>
+
+            </div>
+            </div>
+
+            {/* Experience Card 4 */}
+            <div className="card bg-secondary bg-opacity-10 border-0 shadow-lg mb-5">
+            <div className="card-body p-5">
+
+                <div className="d-flex flex-wrap justify-content-between align-items-start mb-4">
+                    <div>
+                        <h3 className="fw-bold mb-1">Resident Assistant</h3>
+                        <h5 className="mb-0">
+                            <span style={{ color: "#00158eff" }}>Luther College</span>
+                            <span className="text-secondary fs-6"> &middot; Decorah, IA</span>
+                        </h5>
+                    </div>
+                    <span className="badge bg-secondary bg-opacity-25 text-light fs-6 mt-1">August 2026 &ndash; Present</span>
+                </div>
+
+                <ul className="fs-5">
+                    <li className="mb-3">
+                        Support and mentor residents on a dedicated floor, creating an inclusive and safe living-learning community
+                    </li>
+                    
+                    <li className="mb-3">
+                        Plan and lead floor programming and events while responding to conflicts and crisis situations
+                    </li>
+
+                    <li>
+                        Balance leadership responsibilities while being a double major
                     </li>
                 </ul>
 
