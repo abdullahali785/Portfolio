@@ -16,10 +16,18 @@ function Projects() {
             <div className="col">
                 <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom"  onClick={() => window.location.href = "https://github.com/abdullahali785/AI-Image-Text-Analyzer"} style={{ cursor: "pointer" }}>
                     <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
-                        <h3 className="my-3 pt-2 display-6 lh-1 fw-bold text-dark">AI Image Text Analyzer</h3>
+                        <h3 className="my-3 pt-2 display-6 lh-1 fw-bold text-dark">AI Image-Text Analyzer</h3>
                         <p className="text-dark mt-auto">A Python tool that extracts text from an image using EasyOCR and PyTesseract, and generates an AI-powered explanation of the text using OpenAI's GPT model.</p>
                     </div> 
                 </div>
+            </div> 
+            <div className="col">
+                <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom"  onClick={() => window.location.href = "https://github.com/abdullahali785/TravelTicker"} style={{ cursor: "pointer" }}>
+                    <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"> 
+                        <h3 className="my-3 pt-2 display-6 lh-1 fw-bold text-dark">FitVault</h3> 
+                        <p className="text-dark mt-auto">A fitness product discovery and price comparison platform that helps users find the best deals on shoes and apparel across multiple retailers.</p>
+                    </div>
+                </div> 
             </div> 
             <div className="col">
                 <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom"  onClick={() => window.location.href = "https://github.com/abdullahali785/HTTPServer"} style={{ cursor: "pointer" }}>
@@ -43,14 +51,6 @@ function Projects() {
                     <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"> 
                         <h3 className="my-3 pt-2 display-6 lh-1 fw-bold text-dark">Abdullah's Books</h3> 
                         <p className="text-dark mt-auto">A full-stack book tracker using Node.js (Express) and PostgreSQL with CRUD functionality and a responsive UI.</p>
-                    </div>
-                </div> 
-            </div> 
-            <div className="col">
-                <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom"  onClick={() => window.location.href = "https://github.com/abdullahali785/TravelTicker"} style={{ cursor: "pointer" }}>
-                    <div className="d-flex flex-column h-100 p-5 pb-3 text-shadow-1"> 
-                        <h3 className="my-3 pt-2 display-6 lh-1 fw-bold text-dark">Travel Tracker</h3> 
-                        <p className="text-dark mt-auto">A web app that lets you track the travels of your entire family. Users can add family members, log visited countries, and view dynamic maps showing travel history.</p>
                     </div>
                 </div> 
             </div> 

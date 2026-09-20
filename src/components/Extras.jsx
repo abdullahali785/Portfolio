@@ -47,10 +47,10 @@ function Extras() {
                 <div className="col"> 
                     <div className="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg zoom">
                         <div className="d-flex flex-column h-100 px-5 pb-3 text-white text-shadow-1 text-center"> 
-                            <p className="mt-4 pt-4 display-6 lh-1 fw-bold text-dark">Treasurer</p>
+                            <p className="mt-4 pt-4 display-6 lh-1 fw-bold text-dark">Vice President</p>
                             <h3 className="mb-4 pb-4 lh-1 fw-bold text-dark">Computer Science Society (CSS)</h3>
                             <p className="text-dark mt-auto">
-                                I’m proud to serve as Treasurer of the Luther College Computer Science Society, where I help turn ideas into action and create opportunities for our tech community to grow and thrive. Here's how I contribute:<br></br><br></br>
+                                I’m proud to serve as the Vice President of the Luther College Computer Science Society, where I help turn ideas into action and create opportunities for our tech community to grow and thrive. Here's how I contribute:<br></br><br></br>
                                 -Oversee budgeting and financial strategy to power CSS events<br></br>
                                 -Lead planning for workshops, hackathons, and speaker sessions<br></br>
                                 -Build a strong, connected community of future tech leaders

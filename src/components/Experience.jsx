@@ -98,7 +98,7 @@ function Experience() {
                         Made <strong>1700+ edits</strong> to the Technology Help Desk Wiki, a documentation of more than <strong>850 articles</strong>.
                     </li>
 
-                    <li>
+                    <li className="mb-3">
                         Collaborated with other Luther departments and ITS sub-teams to ensure smooth operations.
                     </li>
                 </ul>
