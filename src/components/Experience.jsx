@@ -71,7 +71,7 @@ function Experience() {
             </div>
 
             {/* Experience Card 3 */}
-            <div className="card bg-secondary bg-opacity-10 border-0 shadow-lg">
+            <div className="card bg-secondary bg-opacity-10 border-0 shadow-lg mb-5">
             <div className="card-body p-5">
 
                 <div className="d-flex flex-wrap justify-content-between align-items-start mb-4">
