@@ -7,11 +7,11 @@ This website showcases my projects, skills, experience, and contact links in a c
 
 ## Tech Stack
 
-- **React.js (Create React App)**
-- **JavaScript (ES6+)**
+- **React.js** (Create React App)
+- **JavaScript**
 - **Bootstrap 5**
 - **Custom CSS**
-- **GitHub Pages** (deployment)
+- **GitHub Pages** for deployment
 
 ---
 
@@ -51,3 +51,5 @@ npm run ship
 ```
 
 Stages, commits, and pushes changes to `main`. That single push is what kicks off the entire pipeline above — testing, building, and deploying all happen automatically in CI.
+
+---
