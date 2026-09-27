@@ -1,0 +1,29 @@
+name: API Test — Fetch PR Files
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  fetch-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch changed files
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: files } = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+            });
+
+            console.log(`Changed files: ${files.length}`);
+            for (const file of files) {
+              console.log(`\n--- ${file.filename} (${file.status}) ---`);
+              console.log(file.patch);
+            }
