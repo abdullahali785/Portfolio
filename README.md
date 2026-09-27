@@ -50,5 +50,3 @@ npm run ship
 ```
 
 Stages, commits, and pushes changes to `main`. That single push is what kicks off the entire pipeline above — testing, building, and deploying all happen automatically in CI.
-
----
