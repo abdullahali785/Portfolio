@@ -22,7 +22,6 @@ This website showcases my projects, skills, experience, and contact links in a c
 - Clean component-based architecture
 - Professional layout using Bootstrap + custom styling
 - Hosted live via GitHub Pages
-- Fast optimized production build
 
 ---
 
