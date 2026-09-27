@@ -8,7 +8,7 @@ This website showcases my projects, skills, experience, and contact links in a c
 ## Tech Stack
 
 - **React.js** (Create React App)
-- **JavaScript**
+- **JavaScript** (ES6+)
 - **Bootstrap 5**
 - **Custom CSS**
 - **GitHub Pages** for deployment
