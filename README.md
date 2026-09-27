@@ -10,7 +10,7 @@ This website showcases my projects, skills, experience, and contact links in a c
 - **React.js** (Create React App)
 - **JavaScript** (ES6+)
 - **Bootstrap 5**
-- **Custom CSS**
+- Custom **CSS**
 - **GitHub Pages** (Deployment)
 
 ---
