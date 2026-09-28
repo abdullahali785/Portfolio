@@ -27,5 +27,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.payload.pull_request.number,
-              body: `✅ pull_request_target had write access on a fork PR.\nBase: \`${context.sha.slice(0,7)}\` | PR head: \`${context.payload.pull_request.head.sha.slice(0,7)}\``
+              body: `❌ FORK VERSION RAN`
             });
