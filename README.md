@@ -1,11 +1,11 @@
-# 🌐 Personal Portfolio
+# Personal Portfolio
 
 A modern, responsive **developer portfolio website** built with **React** and deployed using **GitHub Pages**.  
 This website showcases my projects, skills, experience, and contact links in a clean and visually appealing layout.
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **React.js (Create React App)**
 - **JavaScript (ES6+)**
@@ -15,7 +15,7 @@ This website showcases my projects, skills, experience, and contact links in a c
 
 ---
 
-## ✨ Features
+## Features
 
 - Fully responsive UI for desktop and mobile
 - Smooth navigation between sections
