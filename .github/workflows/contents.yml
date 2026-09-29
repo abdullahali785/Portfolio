@@ -1,0 +1,44 @@
+name: Contents Demo
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const pr = context.payload.pull_request;
+
+            const { data: files } = await github.rest.pulls.listFiles({
+              owner, repo, pull_number: pr.number, per_page: 100,
+            });
+
+            const getText = async (path, ref) => {
+              try {
+                const res = await github.rest.repos.getContent({ owner, repo, path, ref });
+                return Buffer.from(res.data.content, 'base64').toString('utf8');
+              } catch (e) {
+                if (e.status === 404) return null; // file doesn't exist at this ref
+                throw e;
+              }
+            };
+
+            for (const f of files.slice(0, 5)) {
+              if (f.status === 'removed') { core.info(`${f.filename}: removed, skipping`); continue; }
+              const head = await getText(f.filename, pr.head.sha);
+              const base = await getText(f.filename, pr.base.sha);
+              core.info(`--- ${f.filename} (${f.status}) ---`);
+              core.info(`patch lines: ${f.patch ? f.patch.split('\n').length : 'n/a'}`);
+              core.info(`head lines (${pr.head.sha.slice(0, 7)}): ${head ? head.split('\n').length : 'missing'}`);
+              core.info(`base lines (${pr.base.sha.slice(0, 7)}): ${base ? base.split('\n').length : 'missing (added in this PR)'}`);
+              core.info(head.split('\n').slice(0, 8).join('\n'));
+            }
