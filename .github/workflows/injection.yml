@@ -1,0 +1,22 @@
+name: Injection Demo
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+permissions:
+  contents: read
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: VULNERABLE - interpolated into run
+        run: |
+          echo "Title: ${{ github.event.pull_request.title }}"
+
+      - name: SAFE - passed via env
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          echo "Title: $PR_TITLE"
