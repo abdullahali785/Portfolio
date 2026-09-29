@@ -1,0 +1,42 @@
+name: Pagination Demo
+
+on:
+  pull_request:
+    types: [opened]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  count:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const pr = context.payload.pull_request;
+            const core_rl = async () => (await github.rest.rateLimit.get()).data.resources.core;
+
+            core.info(`PR really has ${pr.changed_files} changed files`);
+            const before = await core_rl();
+
+            // 1) Naive: one call, default page size
+            const naive = await github.rest.pulls.listFiles({ owner, repo, pull_number: pr.number });
+            core.info(`naive (default per_page): ${naive.data.length} files`);
+            core.info(`Link header: ${naive.headers.link}`);
+
+            // 2) One call at max page size: still truncated
+            const big = await github.rest.pulls.listFiles({ owner, repo, pull_number: pr.number, per_page: 100 });
+            core.info(`per_page=100, single call: ${big.data.length} files`);
+
+            // 3) Paginate properly
+            const all = await github.paginate(github.rest.pulls.listFiles, {
+              owner, repo, pull_number: pr.number, per_page: 100,
+            });
+            core.info(`github.paginate: ${all.length} files`);
+            if (all.length < pr.changed_files) core.warning('hit the 3000-file cap, list is incomplete');
+
+            const after = await core_rl();
+            core.info(`rate limit: limit=${after.limit} remaining=${after.remaining}, this script used ${before.remaining - after.remaining}`);
