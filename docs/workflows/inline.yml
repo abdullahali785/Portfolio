@@ -1,0 +1,61 @@
+# REFERENCE ONLY - not active.
+name: Inline Review Demo
+
+on:
+  pull_request:
+    types: [opened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const pr = context.payload.pull_request;
+
+            const { data: files } = await github.rest.pulls.listFiles({
+              owner, repo, pull_number: pr.number, per_page: 100,
+            });
+            const file = files.find(f => f.status === 'modified' && f.patch);
+            if (!file) { core.info('no modified file with a patch'); return; }
+
+            // Which new-file (RIGHT) line numbers are visible in the diff?
+            const visible = new Set();
+            let newLine = 0, firstAdded = null;
+            for (const l of file.patch.split('\n')) {
+              const m = l.match(/^@@ -\d+(?:,\d+)? \+(\d+)(?:,\d+)? @@/);
+              if (m) { newLine = parseInt(m[1], 10); continue; }
+              if (l === '' || l.startsWith('-') || l.startsWith('\\')) continue;
+              visible.add(newLine);
+              if (l.startsWith('+') && firstAdded === null) firstAdded = newLine;
+              newLine++;
+            }
+            core.info(`${file.filename}: commentable RIGHT lines = ${[...visible].join(',')}`);
+
+            const post = (line, body) => github.rest.pulls.createReview({
+              owner, repo, pull_number: pr.number,
+              commit_id: pr.head.sha,
+              event: 'COMMENT',
+              body: 'Inline comment demo',
+              comments: [{ path: file.filename, line, side: 'RIGHT', body }],
+            });
+
+            // 1) Valid: a line inside the diff
+            const ok = await post(firstAdded, `Demo inline comment on line ${firstAdded}`);
+            core.info(`VALID: review ${ok.data.id} posted on line ${firstAdded}`);
+
+            // 2) Invalid: a line outside every hunk
+            const bad = visible.has(1) ? 9999 : 1;
+            try {
+              await post(bad, 'should fail');
+              core.info(`UNEXPECTED: line ${bad} was accepted`);
+            } catch (e) {
+              core.info(`INVALID line ${bad}: status=${e.status}`);
+              core.info(e.message);
+            }
